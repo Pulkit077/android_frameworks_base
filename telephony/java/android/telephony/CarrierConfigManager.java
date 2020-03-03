@@ -4011,6 +4011,13 @@ public class CarrierConfigManager {
     public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
             "require_apn_filtering_with_radio_capability_bool";
 
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            "default_rtt_mode_int";
 
     /** The default value for every variable. */
     private final static PersistableBundle sDefaults;
@@ -4559,6 +4566,7 @@ public class CarrierConfigManager {
         sDefaults.putString(KEY_EMERGENCY_NOTIFICATION_SUMMARY_STRING, "");
         sDefaults.putString(KEY_EMERGENCY_NOTIFICATION_TITLE_STRING, "");
         sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
         sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
                 "52FF:mms,supl,hipri,default,fota:SA:nrphone",
                 "52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone",
