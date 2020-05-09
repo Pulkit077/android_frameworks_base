@@ -3948,6 +3948,13 @@ public final class Settings {
         public static final String DISPLAY_COLOR_MODE = "display_color_mode";
 
         /**
+         * Whether to play tone while outgoing call is accepted.
+         * The value 1 - vibrate, 0 - not
+         * @hide
+         */
+        public static final String CALL_CONNECTED_TONE_ENABLED = "call_connected_tone_enabled";
+
+        /**
          * The user selected min refresh rate in frames per second.
          *
          * If this isn't set, 0 will be used.
@@ -5823,6 +5830,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(LOCK_TO_APP_ENABLED);
             PRIVATE_SETTINGS.add(EGG_MODE);
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
+            PRIVATE_SETTINGS.add(CALL_CONNECTED_TONE_ENABLED);
         }
 
         /**
